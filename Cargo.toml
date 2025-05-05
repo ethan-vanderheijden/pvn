@@ -1,0 +1,10 @@
+[workspace]
+resolver = "3"
+members = ["apps/tap_tunnel"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+capsule = { git = "https://github.com/ethan-vanderheijden/capsule.git", branch = "djin/0.2.0-alpha" }
