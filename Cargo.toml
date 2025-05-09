@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["apps/tap_tunnel"]
+members = [ "apps/pcap_replay","apps/tunnel", "common", "tls_validator"]
 
 [workspace.package]
 version = "0.1.0"

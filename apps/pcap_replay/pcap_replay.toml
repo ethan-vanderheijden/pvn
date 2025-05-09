@@ -1,0 +1,14 @@
+app_name = "pcap_replay"
+main_core = 0
+worker_cores = []
+
+[mempool]
+    capacity = 65535
+    cache_size = 256
+
+[[ports]]
+    name = "cap0"
+    device = "net_pcap0"
+    args = "rx_pcap=tls_validator/simple-bad.pcap,tx_pcap=output.pcap"
+    rx_cores = [0]
+    tx_cores = [0]
